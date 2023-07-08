@@ -24,8 +24,8 @@ public class MyRestController {
 
     }
 
-    @GetMapping("/cars2")
-    public List<CarDto> showAllCars2() {
+    @GetMapping("/cars3")
+    public List<CarDto> showAllCars3() {
         return carService.getAllCars();
 
     }
