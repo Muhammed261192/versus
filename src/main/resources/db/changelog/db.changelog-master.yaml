@@ -1,0 +1,84 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yml
+#  - changeSet:
+#      id: 1
+#      author: Muhammed
+#      changes:
+#        - createTable:
+#            tableName: car
+#            columns:
+#              - column:
+#                  name: id
+#                  type: BIGINT
+#                  autoIncrement: true
+#                  constraints:
+#                    primaryKey: true
+#                    nullable: false
+#              - column:
+#                  name: name
+#                  type: varchar(50)
+#                  constraints:
+#                    unique: true
+#                    nullable: false
+#              - column:
+#                  name: color
+#                  type: varchar(512)
+#                  constraints:
+#                    nullable: false
+#              - column:
+#                  name: engine
+#                  type: double
+#              - column:
+#                  name: price
+#                  type: int
+#              - column:
+#                  name: madeIn
+#                  type: varchar(50)
+
+
+  - changeSet:
+      id: 5
+      author: Muhammed
+      comment: "Create admin user"
+      changes:
+        - insert:
+            tableName: car
+            columns:
+              - column:
+                  name: name
+                  value: "Honda Accord"
+              - column:
+                  name: color
+                  value: "yellow"
+              - column:
+                  name: engine
+                  value: 2.5
+              - column:
+                  name: price
+                  value: 8000000
+              - column:
+                  name: madeIn
+                  value: "America"
+#  - changeSet:
+#      id: 3
+#      author: Muhammed
+#      comment: "Create admin user"
+#      changes:
+#        - insert:
+#            tableName: car
+#            columns:
+#              - column:
+#                  name: name
+#                  value: "Mercedes-Benz AMG"
+#              - column:
+#                  name: color
+#                  value: "black"
+#              - column:
+#                  name: engine
+#                  value: 5.5
+#              - column:
+#                  name: price
+#                  value: 20000000
+#              - column:
+#                  name: madeIn
+#                  value: "Germany"
