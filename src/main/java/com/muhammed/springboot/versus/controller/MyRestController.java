@@ -24,6 +24,12 @@ public class MyRestController {
 
     }
 
+    @GetMapping("/cars4")
+    public List<CarDto> showAllCars4() {
+        return carService.getAllCars();
+
+    }
+
     @GetMapping("/getCarsByFilter")
     public List<CarDto> getCarsByFilter(@RequestParam String color, @RequestParam double engine) {
         return carService.getCarsByColorAndEngine(color, engine);
